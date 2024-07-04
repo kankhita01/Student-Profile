@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="541.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tutorialproject.student_profile_maker.StudentViewController">
+   <children>
+      <Label layoutX="254.0" layoutY="35.0" text="Student Profile Maker">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="117.0" text="Name" />
+      <Label layoutX="76.0" layoutY="161.0" text="ID" />
+      <Label layoutX="76.0" layoutY="220.0" text="DOB" />
+      <Label layoutX="367.0" layoutY="117.0" text="Gender" />
+      <Label layoutX="357.0" layoutY="161.0" text="Nationality" />
+      <TextField fx:id="nameTextField" layoutX="122.0" layoutY="113.0" />
+      <TextField fx:id="idTextField" layoutX="123.0" layoutY="157.0" />
+      <DatePicker fx:id="dobDatePicker" layoutX="122.0" layoutY="216.0" prefHeight="26.0" prefWidth="150.0" />
+      <RadioButton fx:id="maleRadioButton" layoutX="428.0" layoutY="117.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="485.0" layoutY="117.0" mnemonicParsing="false" text="Female" />
+      <ComboBox fx:id="nationalityComboBox" layoutX="428.0" layoutY="157.0" prefWidth="150.0" />
+      <TextArea fx:id="displayTextArea" layoutX="62.0" layoutY="295.0" prefHeight="186.0" prefWidth="576.0" />
+      <Button layoutX="362.0" layoutY="217.0" mnemonicParsing="false" onAction="#createProfilleOnAction" prefHeight="26.0" prefWidth="229.0" text="Create Profile" />
+   </children>
+</AnchorPane>
